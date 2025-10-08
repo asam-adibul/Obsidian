@@ -32,10 +32,10 @@ Hello to Init Function
 🔍 Things to Remember:
 1. init() runs automatically before main() 
 2. You cannot call init() manually 
-✅ You cannot pass arguments or return values to/from init()
-✅ Each Go file can have only one init() function
-✅ Package execution order → variable initialization → init() → main()
-✅ Useful for setup tasks, configuration, or initialization before main() logic
+3. You cannot pass arguments or return values to/from init()
+4. Each Go file can have only one init() function
+5. Package execution order → variable initialization → init() → main()
+6. Useful for setup tasks, configuration, or initialization before main() logic
 
 ---
 Code From Class 
