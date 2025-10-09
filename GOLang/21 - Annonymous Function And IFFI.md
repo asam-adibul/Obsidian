@@ -106,4 +106,64 @@ Summary:
 - Understanding expressions and function types is crucial for Go interviews.
 
 
-CLa
+Class Code
+---
+```cpp wrap
+package main
+
+import "fmt"
+
+//standard or named fuction
+
+func add(a, b int) {
+
+    fmt.Println(a + b)
+
+}
+
+  
+
+func main() {
+
+    //we invoke the function here
+
+    add(2, 4)
+
+  
+
+    //This is an annonymus function
+
+    //Immidietly Invoked Function Expression
+
+    // IFFE
+
+    a := 10 //expression
+
+  
+
+    //if expression
+
+    if a > 0 {
+
+        fmt.Println("a is greater than 0")
+
+    }
+
+    func(a int, b int) {
+
+        c := a + b
+
+        fmt.Println(c)
+
+    }(5, 7)
+
+}
+
+  
+
+func init() {
+
+    fmt.Println("I'll be called first")
+
+}
+```
