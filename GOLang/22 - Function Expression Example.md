@@ -1,4 +1,4 @@
-:Function Expressions and Scope (Compact Summary)
+Function Expressions and Scope (Compact Summary)
 
 1. Function Expressions
 - A function expression assigns an anonymous function to a variable.
