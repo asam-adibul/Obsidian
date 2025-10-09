@@ -104,3 +104,6 @@ Summary:
 - IIFE = Function defined and executed instantly.
 - “Invoke” = formally call a function.
 - Understanding expressions and function types is crucial for Go interviews.
+
+
+CLa
