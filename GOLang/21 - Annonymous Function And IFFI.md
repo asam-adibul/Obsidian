@@ -106,9 +106,10 @@ Summary:
 - Understanding expressions and function types is crucial for Go interviews.
 
 
-Class Code
+
 ---
-```cpp wrap
+```cpp fold title="Class Code"
+
 package main
 
 import "fmt"
@@ -167,3 +168,4 @@ func init() {
 
 }
 ```
+---
