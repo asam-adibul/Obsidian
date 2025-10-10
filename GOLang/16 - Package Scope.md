@@ -1,6 +1,6 @@
 # 🗒️ Go Study Note: Package Scope
 
-[!note] Go's **package scope** defines the visibility of identifiers like variables and functions across different packages. The fundamental rule is simple: visibility is determined by capitalization.
+> [!note] Go's **package scope** defines the visibility of identifiers like variables and functions across different packages. The fundamental rule is simple: visibility is determined by capitalization.
 
 ## 🔑 The Core Rule: Capitalization
 
