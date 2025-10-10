@@ -1,10 +1,10 @@
 # 🗒️ Go Study Note: Package Scope
 
-> [!note] Go's **package scope** defines the visibility of identifiers like variables and functions across different packages. The fundamental rule is simple: visibility is determined by capitalization.
+>[!note] Go's **package scope** defines the visibility of identifiers like variables and functions across different packages. The fundamental rule is simple: visibility is determined by capitalization.
 
 ## 🔑 The Core Rule: Capitalization
 
-[!tip] Exported vs. Unexported Identifiers
+>[!tip] Exported vs. Unexported Identifiers
 
 - **Exported (Public):** Identifiers that begin with a **capital letter** are exported. They are visible and can be accessed from any other package that imports their package.
 - **Unexported (Private):** Identifiers that begin with a **lowercase letter** are unexported. They are private _to the package_ and only accessible from within their own package.
@@ -20,7 +20,7 @@ Creating custom packages is fundamental for organizing code and controlling visi
 - **Directory Structure:** A new package is created by placing one or more `.go` files into a new directory. By convention, the package name declared in the files should match the directory name (e.g., files in the `mathlib` directory should start with `package mathlib`).
 - **Module Initialization:** In your project's root directory, you must initialize a Go module. The command `go mod init example.com` creates a `go.mod` file and establishes a unique **module path** (`example.com`). This path serves as the absolute root for all import paths within that module.
 
-[!example] Custom Package Code The following code defines a `mathlib` package with both exported and unexported members.
+>[!example] Custom Package Code The following code defines a `mathlib` package with both exported and unexported members.
 
 ```go
 // In file: mathlib/math.go
@@ -50,7 +50,7 @@ After creating a package and initializing the module, its exported members becom
 - **Access Exported Members:** Use dot notation with the package name to access its exported identifiers (e.g., `mathlib.Add(5, 4)` or `mathlib.Money`).
 - **Unexported Members are Inaccessible:** Attempting to access an unexported identifier like `mathlib.subtract` from outside its package will result in a compile-time error, as it is considered private to the `mathlib` package.
 
-[!example] Consuming the Custom Package The `main.go` file imports and uses the `mathlib` package.
+>[!example] Consuming the Custom Package The `main.go` file imports and uses the `mathlib` package.
 
 ```go
 // In file: main.go
@@ -77,7 +77,7 @@ func main() {
 
 --------------------------------------------------------------------------------
 
-[!summary] In Go, capitalization is the sole mechanism for controlling public (exported) versus private (unexported) scope between packages. The `go mod init` command is essential for creating a module that allows Go to manage and locate your custom packages.
+>[!summary] In Go, capitalization is the sole mechanism for controlling public (exported) versus private (unexported) scope between packages. The `go mod init` command is essential for creating a module that allows Go to manage and locate your custom packages.
 
 ```go
 // --- File: go.mod ---
