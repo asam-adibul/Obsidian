@@ -31,8 +31,7 @@ func init() {
 -----
 
 ## 📝 Go Internal Memory Study Notes
-
->[\!note] This document summarizes the internal memory management and execution phases of Go programs.
+>[!note] This document summarizes the internal memory management and execution phases of Go programs.
 
 ### 🚀 Go Program Execution Phases
 
@@ -56,12 +55,12 @@ Go programs utilize the following memory segments in RAM during execution:
 
   * ### Code Segment
 
-      * [\!tip] **Read-Only**: Stores the compiled machine code, including constant values and function definitions.
+      *>[!**Read-Only**: Stores the compiled machine code, including constant values and function definitions.
       * These definitions are loaded from the binary file before the program starts running.
 
   * ### Data Segment
 
-      * [\!note] Stores **global variables** (e.g., `var p = 100`).
+       >[!note] Stores **global variables** (e.g., `var p = 100`).
       * Values in the data segment **can be modified** during program execution, unlike constants in the code segment.
 
   * ### Stack
