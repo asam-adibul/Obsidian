@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=xV5yj1mpDs4&list=PLpCqPSEm2Xe8sEY2haMDUVgwbkIs5NCJI&index=16&pp=iAQB
+content = '''
 ### 🧠 What is Package Scope?
 
 - Package scope determines the visibility of variables, constants, and functions within a Go package.
@@ -59,3 +59,7 @@ Global state at package scope can lead to bugs in concurrent programs.
 | Unexported (Private)   | Package-wide | debugMode          | Same package only      |
 
 ---
+'''
+
+with open("Go_Package_Scope_Study_Notes.txt", "w", encoding="utf-8") as f:
+    f.write(content)
