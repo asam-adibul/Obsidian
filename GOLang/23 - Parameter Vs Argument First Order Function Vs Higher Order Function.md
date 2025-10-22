@@ -180,3 +180,12 @@ Since functions in Go can do all three, **functions are First-Class Citizens**.
 > [!quote] **Takeaway**
 > “Functions in Go are *First-Class Citizens* — meaning they can be treated like data.  
 > That’s the foundation of *Higher-Order Functions*, and the key to writing more expressive Go code.”
+
+
+---
+
+### Use cases
+
+```go
+
+```
