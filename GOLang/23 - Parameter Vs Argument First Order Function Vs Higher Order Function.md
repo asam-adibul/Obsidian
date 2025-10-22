@@ -1,4 +1,4 @@
-# 🟦 Go Study Notes: Advanced Function Concepts
+************# 🟦 Go Study Notes: Advanced Function Concepts
 
 > **Topic:** Parameters, Arguments, and Higher-Order Functions  
 > **Language:** Go (Golang)  
