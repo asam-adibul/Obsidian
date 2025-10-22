@@ -184,8 +184,42 @@ Since functions in Go can do all three, **functions are First-Class Citizens**.
 
 ---
 
-### Use cases
+### Use cases Scenarios
+
+### 🏦 Example: Discount Calculator in an E-commerce App
+
+Let’s say we run an online shop, and we want to apply different discount strategies to an order total.
 
 ```go
+package main
+import "fmt"
 
+// Higher-order function: accepts another function as an argument
+func applyDiscount(price float64, discountFunc func(float64) float64) float64 {
+    return discountFunc(price)
+}
+
+// Discount strategies
+func flat10(price float64) float64 {
+    return price - 10
+}
+
+func tenPercent(price float64) float64 {
+    return price * 0.9
+}
+
+func main() {
+    total := 100.0
+
+    fmt.Println("Flat discount:", applyDiscount(total, flat10))
+    fmt.Println("10% discount:", applyDiscount(total, tenPercent))
+}
 ```
+
+### 🧩 Explanation:
+
+- `applyDiscount()` is the **higher-order function** because it takes another function (`discountFunc`) as input.
+    
+- You can easily swap out the discount logic (`flat10`, `tenPercent`) without changing the main code.
+    
+- This approach is reusable — perfect for systems with many interchangeable behaviors.
