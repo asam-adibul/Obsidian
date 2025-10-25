@@ -1,48 +1,39 @@
+### 🧩 **String Input and Handling**
+
+`cin >> s;              // takes input without whitespace getline(cin, s);       // takes full line input (with spaces)  cin.ignore();          // fixes newline issue before getline()  // taking multiple full-line inputs int k; cin >> k; cin.ignore();          // ignore leftover newline while(k--) {     string line;     getline(cin, line);     cout << line << endl; }`
 
 ---
 
-1. Taking Inputs
+### 🔠 **String Comparison**
 
-```cpp
-        string s;
+`string s1 = "AdiBul", s2 = "Adibul"; cout << (s1 >= s2) << endl;   // lexicographical comparison`
 
-        // no whitespace
+---
 
-        //cin >> s;
+### ✂️ **Substring Extraction**
 
-  
+`string t = s1.substr(1, 3);   // from index 1, take 3 characters`
 
-        // taking input of full line
+---
 
-        getline(cin,s);
+### 🔤 **Sorting Strings**
 
-  
+`sort(s1.begin(), s1.end());       // sort full string sort(s2.begin(), s2.begin()+3);   // sort first 3 characters`
 
-        //getting multiple full lines
+---
 
-        int k; cin >> k;
+### 🧮 **Counting in Strings**
 
-        while(k--){
+`// count digits int cnt = 0; for(char c: s)     if(c >= '0' && c <= '9') cnt++;  // count frequency of letters vector<int> v(26, 0); for(char c: k) v[c - 'a']++;`
 
-            //solving white space issues
+---
 
-            // char c; cin >> c; //doing this
+### 🔁 **Check for Anagram**
 
-            //Alternatively cin.ignore
+`// sort both strings and compare sort(a.begin(), a.end()); sort(b.begin(), b.end()); if(a == b) cout << "Anagram";`
 
-            cin.ignore();
+---
 
-  
-  
+### 💬 **Special Characters**
 
-            //doing this ignores 1st line as getline(cin,s) consumes the newline
-
-            string line;
-
-            getline(cin,line);
-
-            cout << line << endl;
-
-        }
-```
-
+`string s = "This is a backslash: \\"; string k = "This is a double quote: \"\"";`
