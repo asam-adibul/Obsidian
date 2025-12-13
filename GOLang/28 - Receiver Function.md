@@ -69,8 +69,7 @@ func (usr User) printDetails() {
 
 This change allows for a more intuitive and natural way of calling the function, using standard dot notation on the instance itself.
 
-[!example]
-
+>[!example]
 This dot-notation syntax is more than just a stylistic change; it's a fundamental improvement in clarity. The code now reads as "user1, print your details," making the relationship between the data (`user1`) and the behavior (`printDetails`) explicit and intuitive. This makes the code more organized and idiomatic to Go.
 
 Now that we've seen how to create a basic receiver function, let's explore their core rules and capabilities, including their ability to accept additional parameters.
