@@ -5,7 +5,8 @@
 
 In Golang, a receiver function is a function that is attached to a custom type, such as a `struct`. This mechanism allows you to create methods that operate on instances of that type, which is a powerful feature for building well-structured and maintainable programs. By associating functions directly with the types they operate on, you can create code that is more readable, organized, and conceptually similar to methods in object-oriented programming.
 
-[!note] A solid understanding of `structs` is a prerequisite for understanding receiver functions, as they are most commonly attached to custom struct types.
+
+>[!note] A solid understanding of `structs` is a prerequisite for understanding receiver functions, as they are most commonly attached to custom struct types.
 
 Before diving into the syntax of receiver functions, it is useful to first look at the standard approach of using a regular helper function to perform the same task. This comparison will highlight the elegance and organizational benefits that receiver functions bring to your code.
 
@@ -84,7 +85,7 @@ The key principles are as follows:
 - **The Receiver is an Argument:** The receiver—in our example, `(usr User)`—is essentially the first argument to the method. When you call `user1.printDetails()`, Go treats it like `printDetails(user1)`. A **copy** of the `user1` instance is passed and becomes the `usr` variable inside the method's scope. This means the method operates on a copy, just like our original helper function did.
 - **Calling Syntax:** Methods are always invoked using dot notation on a variable of the receiver's type, such as `variable.MethodName()`.
 
-[!warning] Receiver functions are exclusively for custom types. You cannot attach a method to a built-in type like `int` or `string`.
+>[!warning] Receiver functions are exclusively for custom types. You cannot attach a method to a built-in type like `int` or `string`.
 
 With these foundational rules in mind, we can look at a more advanced example that demonstrates how receiver functions can also accept additional parameters.
 
