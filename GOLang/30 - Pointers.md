@@ -10,8 +10,7 @@ At its core, a pointer is just a variable that stores a memory address. That's i
 - It points to the specific location in memory (RAM) where another value is stored.
 - **Analogy:** Think of it like a house address. The address isn't the house itself, but it tells you exactly where to find the house.
 
->
-[!note] Pointers are not as complicated as they sound. At their core, they are just about addresses. Understanding this one concept makes everything else fall into place.
+>[!note] Pointers are not as complicated as they sound. At their core, they are just about addresses. Understanding this one concept makes everything else fall into place.
 
 To work with these memory addresses, Go provides two simple but powerful operators that are essential to master.
 
@@ -40,7 +39,7 @@ func main() {
 
 When you run this code, it will print the value `20` for `x`, and a hexadecimal string like `0xc0000180a8` for `p`. While this hexadecimal string looks cryptic, it represents a very large number corresponding to a specific slot in your computer's memory—potentially one out of billions available.
 
-[!tip] Tip: Dynamic Memory Addresses The memory address you see will likely be different every time you run the program. The operating system assigns available memory dynamically, so a variable won't always be in the same "slot" in RAM.
+>[!tip] Tip: Dynamic Memory Addresses The memory address you see will likely be different every time you run the program. The operating system assigns available memory dynamically, so a variable won't always be in the same "slot" in RAM.
 
 #### 2.2 The "Value at Address" (Dereferencing) Operator (`*`)
 
