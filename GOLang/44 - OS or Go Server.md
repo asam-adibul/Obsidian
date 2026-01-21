@@ -13,9 +13,10 @@ Setting up a proper Go module is the essential first step for any Go application
 1. Create a new project directory and navigate into it using your terminal.
 2. From within the directory, execute the `go mod init` command, followed by a name for your module. The name `ecommerce` is used here as an example.
 
-[!note] Executing this command creates a `go.mod` file in your directory. This file is central to your project, tracking its module path (e.g., `ecommerce`) and any external dependencies it may use.
+>[!note] Executing this command creates a `go.mod` file in your directory. This file is central to your project, tracking its module path (e.g., `ecommerce`) and any external dependencies it may use.
 
 With the module initialized, create the primary application file named `main.go`. For a Go program to be executable, it must have a `package main` declaration and a `main` function, which serves as the program's entry point:
+
 
 ```go
 package main
